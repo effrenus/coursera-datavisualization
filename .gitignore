@@ -3,6 +3,9 @@ coverage
 node_modules
 npm-debug.log
 dist
+app
+gulp
+.*
 .tmp
 .DS_Store
 .sass-cache
