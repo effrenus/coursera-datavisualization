@@ -1,0 +1,42 @@
+extends ./layouts/default
+
+block head
+	- pageTitle = 'Knaji'
+
+block content
+	.svg
+	.wrapper
+		table.table.table-bordered.table-condensed
+			tr
+				th Grade
+				th Educational establishments
+			tr
+				td 1
+				td(rowspan=6) Elementary school
+			tr
+				td 2
+			tr
+				td 3
+			tr
+				td 4
+			tr
+				td 5
+			tr
+				td 6
+			tr
+				td.active 8
+				td(rowspan=3) Junior high school / Lower secondary school
+			tr
+				td.active 9
+			tr
+				td.active 10
+		table.table.table-bordered.table-condensed
+			tr
+				th(colspan=5) Japanese-Language Proficiency Test / JLPT Levels
+			tr
+				td 5 <br>Beginner
+				td 4 <br>Pre-Inter
+				td 3 <br>Inter
+				td 2 <br>Upper
+				td 1 <br>Advanced
+	script(src="/scripts/bundle.js")
